@@ -5,7 +5,7 @@ import SecondaryButton from "./components/SecondaryButton";
 const About = () => {
   return (
     <>
-      <div className="bg-black text-white h-auto ">
+      <div className="bg-black text-white h-screen ">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <p>about</p>
           <LineBreak />

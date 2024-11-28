@@ -6,7 +6,7 @@ interface Props {
 const EducationTable: React.FC<Props> = ({ content }) => {
   return (
     <>
-      <h1> eduaction </h1>
+      <h1> education </h1>
       <br />
       <table style={{ border: "1px dashed white" }}>
         <thead style={{ border: "1px dashed white" }}>

@@ -1,12 +1,11 @@
 import AnimatePulse from "./components/AnimatePulse";
-import LineBreak from "./components/LineBreak";
 import SecondaryButton from "./components/SecondaryButton";
 
 const personalLinks = [
   {
     index: 1,
     platform: "linkedin",
-    link: "https://www.linkedin.com/in/michaelroring/",
+    link: "https://www.linkedin.com/in/michael-roring/",
   },
   {
     index: 2,
@@ -27,8 +26,8 @@ const Contact = () => {
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <h1>contact</h1>
           <br />
-          <h1>you can contact me through this channels:</h1>
-          <div className="mt-12 ">
+          <h1>you can contact me through these channels:</h1>
+          <div className="mt-4">
             {personalLinks.map((link) => (
               <div key={link?.index}>
                 <a
@@ -36,9 +35,8 @@ const Contact = () => {
                   href={link?.link}
                   className="hover:underline"
                 >
-                  {link?.platform}
+                  {link?.platform}: {link?.link}
                 </a>
-                <LineBreak length={4} />
               </div>
             ))}
           </div>
