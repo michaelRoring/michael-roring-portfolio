@@ -4,6 +4,8 @@ import SecondaryButton from "./components/SecondaryButton";
 import AnimatePulse from "./components/AnimatePulse";
 import Achievement from "./components/Achievement";
 import EducationTable from "./components/EducationTable";
+import { CertificationList } from "../lib/definition";
+import CertsComponent from "./components/CertificationList";
 
 const experienceList: ExperienceList[] = [
   {
@@ -72,6 +74,35 @@ const formalEducationList: EducationList[] = [
   },
 ];
 
+const certificationList: CertificationList[] = [
+  {
+    index: 1,
+    name: "google project management",
+    url: "https://coursera.org/share/75438d1aef99ebeeec5a8326a71f051c",
+    platformIssuer: "google",
+    year: "jun 2024",
+    description: "approximately 3 months at 10 hours a week to complete",
+  },
+
+  {
+    index: 2,
+    name: "ef set english certificate",
+    url: "https://cert.efset.org/66LP9c",
+    platformIssuer: "ef set",
+    year: "jun 2023",
+    description:
+      "The achieved level is 63/100 on the EF SET score scale and C1 Advanced according to the Common European Framework of Reference (CEFR). The EF SET score is calculated as an average of the skill section scores.",
+  },
+  {
+    index: 3,
+    name: "fullstack javascript immersive",
+    url: "https://drive.google.com/file/d/1GzV2Tu3T2mRbfuIHOnbB1ZduhDZOIbnk/view?usp=sharing",
+    platformIssuer: "hacktiv8",
+    year: "may 2023",
+    description: "learn fullstack javascript ",
+  },
+];
+
 const SkillExperience = () => {
   return (
     <>
@@ -82,6 +113,8 @@ const SkillExperience = () => {
           <Achievement content={experienceList} />
           <div className="mt-12"></div>
           <EducationTable content={formalEducationList} />
+          <div className="mt-12"></div>
+          <CertsComponent content={certificationList} />
           <div className="mt-12"></div>
           <SecondaryButton link="/">back</SecondaryButton>
           <AnimatePulse></AnimatePulse>

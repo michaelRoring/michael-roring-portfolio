@@ -17,6 +17,16 @@ export interface EducationList {
   certificationUrl?: string;
 }
 
+export interface CertificationList {
+  index: number;
+  name: string;
+  url?: string;
+  description?: string;
+  year?: string;
+  platformIssuer: string;
+  credentialId?: string;
+}
+
 export interface ProjectList {
   index: number;
   title: string;
